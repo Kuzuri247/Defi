@@ -1,9 +1,34 @@
-     {
+// {
+//   "compilerOptions": {
+//     "composite": true,
+//     "module": "ESNext",
+//     "moduleResolution": "Node",
+//     "allowSyntheticDefaultImports": true
+//   },
+//   "include": ["vite.config.ts"]
+// }
+
+// {
+//   "compilerOptions": {
+//     "composite": true,
+//     "module": "ESNext",
+//     "moduleResolution": "Node",
+//     "allowSyntheticDefaultImports": true,
+//     "esModuleInterop": true
+//   },
+//   "include": ["vite.config.ts", "**/*.ts, "],
+//   "exclude": ["node_modules"]
+// }
+
+{
   "compilerOptions": {
     "composite": true,
     "module": "ESNext",
     "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx"
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
