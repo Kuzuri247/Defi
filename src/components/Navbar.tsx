@@ -8,11 +8,12 @@ const Navbar = () => {
 
   return (
     <div>
-        <nav  className="flex justify-center space-x-4 py-7">
-          <a href="src/components/Swap.tsx">Swap</a>
-          <a href="src/components/Liquidity.tsx">Liquidity</a>
-          <a href="src/components/Portfolio.tsx">Portfolio</a> 
-          <a href="src/components/More.tsx">More</a> 
+        <nav  className="flex justify-center space-x-4 py-7 text-3xl font-bold">
+
+          <Link to="src/components/Swap.tsx">Swap</Link>
+          <Link to="src/components/Liquidity.tsx">Liquidity</Link>
+          <Link to="src/components/Portfolio.tsx">Portfolio</Link> 
+          <Link to="src/components/More.tsx">More</Link> 
         </nav>
     </div>
   )

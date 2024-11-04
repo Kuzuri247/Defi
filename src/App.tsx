@@ -1,46 +1,44 @@
-import React from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
-import { Router } from 'lucide-react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Liquidity from './components/Liquidity'
-import Swap from './components/Swap'
-import Portfolio from './components/Portfolio'
-import More from './components/More'
+import React from 'react';
+import './App.css';
+import Navbar from './components/Navbar';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Liquidity from './components/Liquidity';
+import Swap from './components/Swap';
+import Portfolio from './components/Portfolio';
+import More from './components/More';
 
-
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <><Navbar /><div className="text-3xl font-bold text-center">Billa 69</div></>,
+    errorElement: <div>Error loading page</div>,
+  },
+  {
+    path: '/swap',
+    element: <><Navbar /><Swap /></>,
+    errorElement: <div>Error loading Swap</div>,
+  },
+  {
+    path: '/liquidity',
+    element: <><Navbar /><Liquidity /></>,
+    errorElement: <div>Error loading Liquidity</div>,
+  },
+  {
+    path: '/more',
+    element: <><Navbar /><More /></>,
+    errorElement: <div>Error loading More</div>,
+  },
+  {
+    path: '/portfolio',
+    element: <><Navbar /><Portfolio /></>,
+    errorElement: <div>Error loading Portfolio</div>,
+  },
+]);
 
 function App() {
-  
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <App />,
-      errorElement: <App />,
-    },
-    {
-      path: '/swap',
-      element: < Swap/>,
-      errorElement: <App />,
-    },
-    {
-      path: '/liquidity',
-      element: <Liquidity />,
-      errorElement: <App />,
-    },
-    {
-      path: '/more ',
-      element: <More/>,
-      errorElement: <App />,
-    }
-  ])
-
   return (
-    <div className=" text-3xl font-bold text-center">
-      <Navbar/>
-      Billa 69
-    </div>
-  )
+    <RouterProvider router={router} />
+  );
 }
 
-export default App
+export default App;
