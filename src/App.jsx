@@ -5,8 +5,9 @@ function App() {
   
 
   return (
-    <div className=" text-3xl">
-      Hello World
+    <div className="flex justify-center items-center bg-white dark:bg-gray-900 h-screen">
+      <div>
+      </div>
     </div>
   )
 }
