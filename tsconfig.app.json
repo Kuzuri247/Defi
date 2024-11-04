@@ -2,7 +2,7 @@
     "compilerOptions": {
       
       "allowImportingTsExtensions": true,
- 
+      "noEmit": true,
       "jsx": "react",
       // ...
       "baseUrl": ".",
@@ -12,6 +12,7 @@
         ]
       }
       // ...
-    }
+    },
+    "exclude": ["node_modules"]
   }
   
