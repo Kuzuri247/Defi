@@ -18,6 +18,38 @@ const tokens: Token[] = [
     marketCap: 234567890,
     volume24h: 12345678,
   },
+  {
+    symbol: 'SRM',
+    name: 'Serum',
+    price: 0.98,
+    change24h: 0.12,
+    marketCap: 1234567890,
+    volume24h: 987654321,
+  },
+  {
+    symbol: 'BTC',
+    name: 'Bitcoin',
+    price: 10000,
+    change24h: 0.12,
+    marketCap: 1234567890,
+    volume24h: 987654321,
+  },
+  {
+    symbol: 'ETH',
+    name: 'Ethereum',
+    price: 10000,
+    change24h: 0.12,
+    marketCap: 1234567890,
+    volume24h: 987654321,
+  },
+  {
+    symbol: 'BNB',
+    name: 'Binance Coin',
+    price: 10000,
+    change24h: 0.12,
+    marketCap: 1234567890,
+    volume24h: 987654321,
+  },
 ];
 
 export function TokenList() {

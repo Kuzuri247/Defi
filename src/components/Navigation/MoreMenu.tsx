@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import { MoreHorizontal, HelpCircle, Book, Users, Settings } from 'lucide-react';
 
 const moreItems = [
+  { name: 'Bridge', icon: Settings, path: '/bridge' },
+  { name: 'Staking', icon: MoreHorizontal, path: '/staking' },
+  { name: 'Support', icon: HelpCircle, path: '/support' },
   { name: 'Documentation', icon: Book, path: '/docs' },
   { name: 'Community', icon: Users, path: '/community' },
-  { name: 'Support', icon: HelpCircle, path: '/support' },
-  { name: 'Settings', icon: Settings, path: '/settings' },
 ];
 
 export function MoreMenu() {
