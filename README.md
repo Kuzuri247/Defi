@@ -3,13 +3,13 @@
   <a href="https://github.com/stable-fund/stable-fun/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Stable Fun is released under the MIT license." />
   </a>
-  <a href="https://discord.gg/stablefun">
+  <a href="https://discord.gg/stablefun](https://discord.gg/ESWSvEuV">
     <img src="https://img.shields.io/discord/1031356969446471026?color=blue&label=Discord&logo=discord&logoColor=white" alt="Join the Stable Fun Discord server." />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://stablefun.com">
+  <a href="stable-fun-fr.vercel.app">
     <img src="https://stablefun.com/assets/images/logo.svg" alt="Stable Fun" width="200" />
   </a>
 </p>
