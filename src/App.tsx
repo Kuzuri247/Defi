@@ -1,43 +1,25 @@
 import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Liquidity from './components/Liquidity';
-import Swap from './components/Swap';
-import Portfolio from './components/Portfolio';
-import More from './components/More';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Layout } from './components/Layout';
+import { Home } from './pages/Home';
+import { Swap } from './pages/Swap';
+import { Liquidity } from './pages/Liquidity';
+import { Mint } from './pages/Mint';
+import { Portfolio } from './pages/Portfolio';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <><Navbar /><div className="text-3xl font-bold text-center">Billa 69</div></>,
-    errorElement: <div>Error loading page</div>,
-  },
-  {
-    path: '/swap',
-    element: <><Navbar /><Swap /></>,
-    errorElement: <div>Error loading Swap</div>,
-  },
-  {
-    path: '/liquidity',
-    element: <><Navbar /><Liquidity /></>,
-    errorElement: <div>Error loading Liquidity</div>,
-  },
-  {
-    path: '/more',
-    element: <><Navbar /><More /></>,
-    errorElement: <div>Error loading More</div>,
-  },
-  {
-    path: '/portfolio',
-    element: <><Navbar /><Portfolio /></>,
-    errorElement: <div>Error loading Portfolio</div>,
-  },
-]);
-
-function App() {
+export function App() {
   return (
-    <RouterProvider router={router} />
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/swap" element={<Swap />} />
+          <Route path="/liquidity" element={<Liquidity />} />
+          <Route path="/mint" element={<Mint />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 

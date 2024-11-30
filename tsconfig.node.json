@@ -1,34 +1,22 @@
-// {
-//   "compilerOptions": {
-//     "composite": true,
-//     "module": "ESNext",
-//     "moduleResolution": "Node",
-//     "allowSyntheticDefaultImports": true
-//   },
-//   "include": ["vite.config.ts"]
-// }
-
-// {
-//   "compilerOptions": {
-//     "composite": true,
-//     "module": "ESNext",
-//     "moduleResolution": "Node",
-//     "allowSyntheticDefaultImports": true,
-//     "esModuleInterop": true
-//   },
-//   "include": ["vite.config.ts", "**/*.ts, "],
-//   "exclude": ["node_modules"]
-// }
-
 {
   "compilerOptions": {
-    "composite": true,
+    "target": "ES2022",
+    "lib": ["ES2023"],
     "module": "ESNext",
-    "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "jsx": "react-jsx"
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
   },
-  "include": ["vite.config.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["vite.config.ts"]
 }
