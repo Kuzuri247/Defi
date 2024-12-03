@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Swap = () => {
-  return (
-    <div>Swap</div>
-  )
-}
+  return <div>Swap</div>;
+};
 
-export default Swap
+export default Swap;

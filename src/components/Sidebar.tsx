@@ -1,13 +1,19 @@
-import React from 'react';
-import { LayoutDashboard, Repeat, Droplets, Coins, PieChart } from 'lucide-react';
+import React from "react";
+import {
+  LayoutDashboard,
+  Repeat,
+  Droplets,
+  Coins,
+  PieChart,
+} from "lucide-react";
 
 export function Sidebar() {
   const navigation = [
-    { name: 'Dashboard', icon: LayoutDashboard },
-    { name: 'Swap', icon: Repeat },
-    { name: 'Liquidity', icon: Droplets },
-    { name: 'Staking', icon: Coins },
-    { name: 'Portfolio', icon: PieChart },
+    { name: "Dashboard", icon: LayoutDashboard },
+    { name: "Swap", icon: Repeat },
+    { name: "Liquidity", icon: Droplets },
+    { name: "Staking", icon: Coins },
+    { name: "Portfolio", icon: PieChart },
   ];
 
   return (

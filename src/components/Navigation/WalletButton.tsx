@@ -1,5 +1,5 @@
-import React from 'react';
-import { Wallet } from 'lucide-react';
+import React from "react";
+import { Wallet } from "lucide-react";
 
 export function WalletButton() {
   return (

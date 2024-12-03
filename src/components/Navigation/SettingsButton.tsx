@@ -1,5 +1,5 @@
-import React from 'react';
-import { Settings } from 'lucide-react';
+import React from "react";
+import { Settings } from "lucide-react";
 
 export function SettingsButton() {
   return (

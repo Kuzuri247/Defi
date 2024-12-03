@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import { NavLinks } from './NavLinks';
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { NavLinks } from "./NavLinks";
 
 export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +11,7 @@ export function MobileMenu() {
         onClick={() => setIsOpen(!isOpen)}
         className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white"
       >
-        {isOpen ? (
-          <X className="h-6 w-6" />
-        ) : (
-          <Menu className="h-6 w-6" />
-        )}
+        {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
       </button>
 
       {isOpen && (

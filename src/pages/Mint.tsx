@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { Coins } from 'lucide-react';
+import React, { useState } from "react";
+import { Coins } from "lucide-react";
 
 export function Mint() {
-  const [tokenName, setTokenName] = useState('');
-  const [tokenSymbol, setTokenSymbol] = useState('');
-  const [totalSupply, setTotalSupply] = useState('');
+  const [tokenName, setTokenName] = useState("");
+  const [tokenSymbol, setTokenSymbol] = useState("");
+  const [totalSupply, setTotalSupply] = useState("");
 
   return (
     <div className="mx-auto max-w-lg">
       <h1 className="mb-8 text-3xl font-bold">Mint New Token</h1>
-      
+
       <div className="rounded-lg bg-gray-800 p-6">
         <div className="mb-6 flex items-center justify-center">
           <div className="rounded-full bg-indigo-600/20 p-4">
@@ -19,7 +19,9 @@ export function Mint() {
 
         <div className="space-y-4">
           <div>
-            <label className="mb-2 block text-sm text-gray-400">Token Name</label>
+            <label className="mb-2 block text-sm text-gray-400">
+              Token Name
+            </label>
             <input
               type="text"
               value={tokenName}
@@ -30,7 +32,9 @@ export function Mint() {
           </div>
 
           <div>
-            <label className="mb-2 block text-sm text-gray-400">Token Symbol</label>
+            <label className="mb-2 block text-sm text-gray-400">
+              Token Symbol
+            </label>
             <input
               type="text"
               value={tokenSymbol}
@@ -41,7 +45,9 @@ export function Mint() {
           </div>
 
           <div>
-            <label className="mb-2 block text-sm text-gray-400">Total Supply</label>
+            <label className="mb-2 block text-sm text-gray-400">
+              Total Supply
+            </label>
             <input
               type="number"
               value={totalSupply}

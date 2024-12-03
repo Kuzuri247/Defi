@@ -1,6 +1,6 @@
 // import React from 'react';
-import { Stats } from '../components/Dashboard/Stats';
-import { TokenList } from '../components/Dashboard/TokenList';
+import { Stats } from "../components/Dashboard/Stats";
+import { TokenList } from "../components/Dashboard/TokenList";
 
 export function Dashboard() {
   return (

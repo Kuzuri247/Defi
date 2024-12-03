@@ -1,9 +1,9 @@
-import React from 'react';
-import { Plus } from 'lucide-react';
+import React from "react";
+import { Plus } from "lucide-react";
 
 const pools = [
-  { pair: 'SOL/USDC', tvl: '$45.2M', apr: '12.5%', volume: '$2.1M' },
-  { pair: 'RAY/USDC', tvl: '$12.8M', apr: '18.2%', volume: '$890K' },
+  { pair: "SOL/USDC", tvl: "$45.2M", apr: "12.5%", volume: "$2.1M" },
+  { pair: "RAY/USDC", tvl: "$12.8M", apr: "18.2%", volume: "$890K" },
 ];
 
 export function Liquidity() {

@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { ArrowDownUp } from 'lucide-react';
+import React, { useState } from "react";
+import { ArrowDownUp } from "lucide-react";
 
 export function Swap() {
-  const [fromToken, setFromToken] = useState('SOL');
-  const [toToken, setToToken] = useState('USDC');
-  const [amount, setAmount] = useState('');
+  const [fromToken, setFromToken] = useState("SOL");
+  const [toToken, setToToken] = useState("USDC");
+  const [amount, setAmount] = useState("");
 
   return (
     <div className="mx-auto max-w-lg">
@@ -32,7 +32,7 @@ export function Swap() {
               </select>
             </div>
           </div>
-          
+
           <button className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-gray-700 p-2 hover:bg-gray-600">
             <ArrowDownUp className="h-5 w-5" />
           </button>

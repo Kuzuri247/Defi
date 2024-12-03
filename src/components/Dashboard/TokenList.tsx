@@ -1,50 +1,50 @@
-import React from 'react';
-import type { Token } from '../../types';
+import React from "react";
+import type { Token } from "../../types";
 
 const tokens: Token[] = [
   {
-    symbol: 'SOL',
-    name: 'Solana',
+    symbol: "SOL",
+    name: "Solana",
     price: 188.45,
     change24h: 5.67,
     marketCap: 82456789012,
     volume24h: 3456789012,
   },
   {
-    symbol: 'RAY',
-    name: 'Raydium',
+    symbol: "RAY",
+    name: "Raydium",
     price: 2.34,
     change24h: -2.15,
     marketCap: 234567890,
     volume24h: 12345678,
   },
   {
-    symbol: 'SRM',
-    name: 'Serum',
+    symbol: "SRM",
+    name: "Serum",
     price: 0.98,
     change24h: 0.12,
     marketCap: 1234567890,
     volume24h: 987654321,
   },
   {
-    symbol: 'BTC',
-    name: 'Bitcoin',
+    symbol: "BTC",
+    name: "Bitcoin",
     price: 10000,
     change24h: 0.12,
     marketCap: 1234567890,
     volume24h: 987654321,
   },
   {
-    symbol: 'ETH',
-    name: 'Ethereum',
+    symbol: "ETH",
+    name: "Ethereum",
     price: 10000,
     change24h: 0.12,
     marketCap: 1234567890,
     volume24h: 987654321,
   },
   {
-    symbol: 'BNB',
-    name: 'Binance Coin',
+    symbol: "BNB",
+    name: "Binance Coin",
     price: 10000,
     change24h: 0.12,
     marketCap: 1234567890,
@@ -73,12 +73,17 @@ export function TokenList() {
                 <td className="py-4">
                   <div className="flex items-center">
                     <span className="font-medium">{token.symbol}</span>
-                    <span className="ml-2 text-sm text-gray-400">{token.name}</span>
+                    <span className="ml-2 text-sm text-gray-400">
+                      {token.name}
+                    </span>
                   </div>
                 </td>
                 <td className="py-4">${token.price.toLocaleString()}</td>
-                <td className={`py-4 ${token.change24h >= 0 ? 'text-green-400' : 'text-red-400'}`}>
-                  {token.change24h > 0 ? '+' : ''}{token.change24h}%
+                <td
+                  className={`py-4 ${token.change24h >= 0 ? "text-green-400" : "text-red-400"}`}
+                >
+                  {token.change24h > 0 ? "+" : ""}
+                  {token.change24h}%
                 </td>
                 <td className="py-4">${(token.marketCap / 1e9).toFixed(2)}B</td>
                 <td className="py-4">${(token.volume24h / 1e6).toFixed(2)}M</td>

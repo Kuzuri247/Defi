@@ -1,9 +1,8 @@
-import React from 'react';
-import { Brand } from './Navigation/Brand';
-import { WalletButton } from './Navigation/WalletButton';
-import { SettingsButton } from './Navigation/SettingsButton';
-import { MobileMenu } from './Navigation/MobileMenu';
-import { NavLinks } from './Navigation/NavLinks';
+import { Brand } from "./Navigation/Brand";
+import { WalletButton } from "./Navigation/WalletButton";
+import { SettingsButton } from "./Navigation/SettingsButton";
+import { MobileMenu } from "./Navigation/MobileMenu";
+import { NavLinks } from "./Navigation/NavLinks";
 
 export function Navbar() {
   return (

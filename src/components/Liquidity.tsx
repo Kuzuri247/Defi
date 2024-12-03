@@ -1,12 +1,8 @@
-import React from 'react'
-import { Button } from './ui/button'
+import React from "react";
+import { Button } from "./ui/button";
 
 const Liquidity = () => {
-  return (
-    
-      <div>Liquidity</div>
-  
-  )
-}
+  return <div>Liquidity</div>;
+};
 
-export default Liquidity
+export default Liquidity;

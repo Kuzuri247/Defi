@@ -1,20 +1,20 @@
-import React from 'react';
-import { Lock } from 'lucide-react';
+import React from "react";
+import { Lock } from "lucide-react";
 
 const stakingPools = [
   {
-    token: 'SOL',
-    apr: '8.5%',
-    duration: '30 days',
-    minStake: '10 SOL',
-    totalStaked: '125.5K SOL',
+    token: "SOL",
+    apr: "8.5%",
+    duration: "30 days",
+    minStake: "10 SOL",
+    totalStaked: "125.5K SOL",
   },
   {
-    token: 'RAY',
-    apr: '15.2%',
-    duration: '90 days',
-    minStake: '100 RAY',
-    totalStaked: '2.1M RAY',
+    token: "RAY",
+    apr: "15.2%",
+    duration: "90 days",
+    minStake: "100 RAY",
+    totalStaked: "2.1M RAY",
   },
 ];
 
@@ -22,7 +22,7 @@ export function Staking() {
   return (
     <div className="space-y-6">
       <h1 className="text-3xl font-bold">Staking</h1>
-      
+
       <div className="grid gap-6 md:grid-cols-2">
         {stakingPools.map((pool) => (
           <div key={pool.token} className="rounded-lg bg-gray-800 p-6">
@@ -35,7 +35,7 @@ export function Staking() {
                 {pool.duration}
               </span>
             </div>
-            
+
             <div className="space-y-3">
               <div className="flex justify-between">
                 <span className="text-gray-400">APR</span>

@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Zap } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Zap } from "lucide-react";
 
 export function Brand() {
   return (
-    <Link 
+    <Link
       to="/"
       className="flex  space-x-2 transition-opacity hover:opacity-80"
     >

@@ -1,20 +1,20 @@
-import React from 'react';
-import { TokenRow } from './TokenRow';
-import { TokenListHeader } from './TokenListHeader';
-import type { Token } from '../../types';
+import React from "react";
+import { TokenRow } from "./TokenRow";
+import { TokenListHeader } from "./TokenListHeader";
+import type { Token } from "../../types";
 
 const tokens: Token[] = [
   {
-    symbol: 'SOL',
-    name: 'Solana',
+    symbol: "SOL",
+    name: "Solana",
     price: 188.45,
     change24h: 5.67,
     marketCap: 82456789012,
     volume24h: 3456789012,
   },
   {
-    symbol: 'RAY',
-    name: 'Raydium',
+    symbol: "RAY",
+    name: "Raydium",
     price: 2.34,
     change24h: -2.15,
     marketCap: 234567890,

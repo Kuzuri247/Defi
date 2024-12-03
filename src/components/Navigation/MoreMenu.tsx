@@ -1,13 +1,19 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { MoreHorizontal, HelpCircle, Book, Users, Settings } from 'lucide-react';
+import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
+import {
+  MoreHorizontal,
+  HelpCircle,
+  Book,
+  Users,
+  Settings,
+} from "lucide-react";
 
 const moreItems = [
-  { name: 'Bridge', icon: Settings, path: '/bridge' },
-  { name: 'Staking', icon: MoreHorizontal, path: '/staking' },
-  { name: 'Support', icon: HelpCircle, path: '/support' },
-  { name: 'Documentation', icon: Book, path: '/docs' },
-  { name: 'Community', icon: Users, path: '/community' },
+  { name: "Bridge", path: "/bridge" },
+  { name: "Staking", icon: MoreHorizontal, path: "/staking" },
+  { name: "Support", icon: HelpCircle, path: "/support" },
+  { name: "Documentation", icon: Book, path: "/docs" },
+  { name: "Community", icon: Users, path: "/community" },
 ];
 
 export function MoreMenu() {
@@ -21,8 +27,8 @@ export function MoreMenu() {
       }
     }
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (

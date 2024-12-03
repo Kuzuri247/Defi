@@ -1,13 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Repeat, Droplets, Coins, PieChart, MoreHorizontal } from 'lucide-react';
-import { MoreMenu } from './MoreMenu';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Repeat,
+  Droplets,
+  Coins,
+  PieChart,
+  MoreHorizontal,
+} from "lucide-react";
+import { MoreMenu } from "./MoreMenu";
 
 export const navigationItems = [
-  { name: 'Swap', icon: Repeat, path: '/swap' },
-  { name: 'Liquidity', icon: Droplets, path: '/liquidity' },
-  { name: 'Mint', icon: Coins, path: '/mint' },
-  { name: 'Portfolio', icon: PieChart, path: '/portfolio' },
+  { name: "Swap", icon: Repeat, path: "/swap" },
+  { name: "Liquidity", icon: Droplets, path: "/liquidity" },
+  { name: "Mint", icon: Coins, path: "/mint" },
+  { name: "Portfolio", icon: PieChart, path: "/portfolio" },
 ];
 
 interface NavLinksProps {
@@ -15,7 +21,7 @@ interface NavLinksProps {
   isMobile?: boolean;
 }
 
-export function NavLinks({ className = '', isMobile = false }: NavLinksProps) {
+export function NavLinks({ className = "", isMobile = false }: NavLinksProps) {
   return (
     <nav className={className}>
       {navigationItems.map((item) => (
