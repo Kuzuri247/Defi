@@ -7,7 +7,8 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="">
+    
       <Navbar />
       <main className="mx-auto max-w-7xl p-6">{children}</main>
     </div>

@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 
 const moreItems = [
-  { name: "Bridge", path: "/bridge" },
+  { name: "Bridge",icon:  Settings, path: "/bridge" },
   { name: "Staking", icon: MoreHorizontal, path: "/staking" },
   { name: "Support", icon: HelpCircle, path: "/support" },
   { name: "Documentation", icon: Book, path: "/docs" },
