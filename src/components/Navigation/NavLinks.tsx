@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { MoreMenu } from "./MoreMenu";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const navigationItems = [
   { name: "Swap", icon: Repeat, path: "/swap" },
   { name: "Liquidity", icon: Droplets, path: "/liquidity" },

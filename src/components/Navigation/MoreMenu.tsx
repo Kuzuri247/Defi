@@ -9,11 +9,11 @@ import {
 } from "lucide-react";
 
 const moreItems = [
-  { name: "Bridge",icon:  Settings, path: "/bridge" },
-  { name: "Staking", icon: MoreHorizontal, path: "/staking" },
-  { name: "Support", icon: HelpCircle, path: "/support" },
-  { name: "Documentation", icon: Book, path: "/docs" },
-  { name: "Community", icon: Users, path: "/community" },
+  { name: "Bridge",icon:  Settings, path: "./bridge" },
+  { name: "Staking", icon: MoreHorizontal, path: "./staking" },
+  { name: "Disclaimer", icon: HelpCircle, path: "./disclaimer" },
+  { name: "Documentation", icon: Book, path: "./docs" },
+  { name: "Community", icon: Users, path: "./community" },
 ];
 
 export function MoreMenu() {

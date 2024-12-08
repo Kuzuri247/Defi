@@ -6,6 +6,10 @@ import { Swap } from "./pages/Swap";
 import { Liquidity } from "./pages/Liquidity";
 import { Mint } from "./pages/Mint";
 import { Portfolio } from "./pages/Portfolio";
+import { Staking } from "./pages/Staking";
+import { Disclaimer } from "./pages/Disclaimer";
+import { BrickWallIcon } from "lucide-react";
+import { Bridge } from "./pages/Bridge";
 
 export function App() {
   return (
@@ -17,6 +21,9 @@ export function App() {
           <Route path="/liquidity" element={<Liquidity />} />
           <Route path="/mint" element={<Mint />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/staking" element={<Staking />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/bridge" element={<Bridge />} />
         </Routes>
       </Layout>
     </Router>
