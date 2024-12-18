@@ -10,9 +10,11 @@ import { Staking } from "./pages/Staking";
 import { Disclaimer } from "./pages/Disclaimer";
 import { BrickWallIcon } from "lucide-react";
 import { Bridge } from "./pages/Bridge";
+import { Analytics } from '@vercel/analytics/react';
 
 export function App() {
   return (
+    <>
     <Router>
       <Layout>
         <Routes>
@@ -27,6 +29,8 @@ export function App() {
         </Routes>
       </Layout>
     </Router>
+    <Analytics/>
+    </>
   );
 }
 
