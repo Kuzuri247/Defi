@@ -1,12 +1,14 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import {
   Repeat,
   Droplets,
   Coins,
   PieChart,
+  MoreHorizontal,
 } from "lucide-react";
 import { MoreMenu } from "./MoreMenu";
- 
+
 // eslint-disable-next-line react-refresh/only-export-components
 export const navigationItems = [
   { name: "Swap", icon: Repeat, path: "/swap" },
@@ -35,5 +37,5 @@ export function NavLinks({ className = "", isMobile = false }: NavLinksProps) {
       ))}
       {!isMobile && <MoreMenu />}
     </nav>
-   ) ; 
+  );
 }

@@ -8,9 +8,9 @@ import { Mint } from "./pages/Mint";
 import { Portfolio } from "./pages/Portfolio";
 import { Staking } from "./pages/Staking";
 import { Disclaimer } from "./pages/Disclaimer";
+import { BrickWallIcon } from "lucide-react";
 import { Bridge } from "./pages/Bridge";
 import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/react';
 
 export function App() {
   return (
@@ -30,7 +30,6 @@ export function App() {
       </Layout>
     </Router>
     <Analytics/>
-    <SpeedInsights/>
     </>
   );
 }
