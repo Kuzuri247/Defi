@@ -1,6 +1,6 @@
 import { Brand } from "./Navigation/Brand";
 import { SettingsButton } from "./Navigation/SettingsButton";
-import { MobileMenu } from "./Navigation/MobileMenu";
+// import { MobileMenu } from "./Navigation/MobileMenu";
 import { NavLinks } from "./Navigation/NavLinks";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
@@ -20,7 +20,7 @@ export function Navbar() {
           <div className="flex items-center space-x-4">
             <SettingsButton />
             <WalletMultiButton />
-            <MobileMenu />
+            {/* <MobileMenu /> */}
           </div>
         </div>
       </div>
